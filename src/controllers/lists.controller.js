@@ -17,7 +17,8 @@ export const getListController = async (req, res) => {
 export const addListController = async (req, res) => {
   const listBody = req.body;
   const list = await getListService(listBody.listTitle);
-  if(list) return res.status(400).send('list already exists')
+  console.log(list,'rere')
+  if(list.length) return res.status(400).send('list already exists')
   const newList = await addListService(listBody);
 
   res.status(201).send(newList);
