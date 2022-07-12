@@ -1,0 +1,26 @@
+{
+  "name": "to-do-back",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "commit": "git add . && npx cz && git push"
+  },
+  "author": "Renato Nakamura",
+  "license": "ISC",
+  "dependencies": {
+    "commitizen-emoji": "^1.0.5",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "mongoose": "^6.4.4",
+    "nodemon": "^2.0.19"
+  },  
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/commitizen-emoji"
+    }
+  }
+}
